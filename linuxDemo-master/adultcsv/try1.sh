@@ -58,7 +58,7 @@ x2=`echo "scale=4;$x^2"|bc`
 cx2=`echo "scale=4;$x2+$cx2"|bc`
 fx2=`echo "scale=4;$count*$x2"|bc`
 cfx2=`echo "scale=4;$cfx2+$fx2"|bc`
-echo "[$start - $i) -> $count -> $cf ->$x -> $cfx -> $x2 -> $fx2"
+#echo "[$start - $i) -> $count -> $cf ->$x -> $cfx -> $x2 -> $fx2"
 start=$i
 done
 if [ $i -lt $max ]
@@ -80,7 +80,7 @@ x2=`echo "scale=4;$x^2"|bc`
 cx2=`echo "scale=4;$x2+$cx2"|bc`
 fx2=`echo "scale=4;$count*$x2"|bc`
 cfx2=`echo "scale=4;$cfx2+$fx2"|bc`
-echo "[$i - $max] -> $count -> $cf -> $x ->$cfx -> $x2 -> $fx2"
+#echo "[$i - $max] -> $count -> $cf -> $x ->$cfx -> $x2 -> $fx2"
 fi
 
 echo "-------------------------------------------------"
